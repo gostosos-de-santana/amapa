@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gostosos Santana/AP</title>
+    <link rel="stylesheet" href='estilo.css'/>
+    <link rel="stylesheet" href="animations.css"/>
+    <style>
+
+      input[type=checkbox] {
+        animation-name: mov;
+        animation-duration: 3s;
+        width: 15px;
+        height: 15pt;
+        cursor: pointer;
+        transition: 0.2s;
+        outline: none;
+      } 
+
+      input[type=checkbox]:hover {
+        width: 20px;
+      }
+
+      input:checked {
+        width:20px;
+      }   
+    
+      form input[type=button] {
+        float: left;
+        background-color: red;
+        color: white;
+        transition: 0.2s; 
+      }
+      input#cont[type=button]:hover {
+        background-color: white;
+        color: black;
+        border-color:red;
+        box-shadow: 0px 0px 0.50em red;
+      }
+
+      form input[type=submit] {
+        float: right;
+        background-color: green;
+        color: white;
+        transition: 0.2s;
+      }
+      input#cont[type=submit]:hover {
+        background-color:white;
+        color: black;         
+        border-color: green; 
+        box-shadow: 0px 0px 0.50em green;
+      } 
+
+    </style>
+</head>
+
+<body onload="load()">
+    <div id = "cabe">
+      <header>
+        <marquee> Encontre um gostoso próximo de você!</marquee> 
+      </header>
+    </div>
+
+    <section> 
+      <div id='brab'>
+        <p id='par2' style='text-align: center;'> <b> Óla [Nome] </b> </p>
+
+       <p> <input type="checkbox" name="ops" id="op1" onclick ="clicar()">
+          <label for='op1'>Gosta de ficar mais em casa.</label> </p> 
+
+        <p> <input type="checkbox" name="ops" id="op2"onclick ="clicar()" >
+          <label for='op2'> Gosta de sair todo fim de semana ou quase todos.</label> </p>
+
+       <p> <input type="checkbox" name="ops" id="op3" onclick ="clicar()">
+          <label for='op3'> Introvertido. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op4" onclick ="clicar()">
+          <label for='op4'> Extrovertido. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op5" onclick ="clicar()">
+          <label for='op5'> Gosta de Games. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op6" onclick ="clicar()">
+          <label for='op6'>Assiste muitas séries. </label> </p>
+        
+        <p> <input type="checkbox" name="ops" id="op7" onclick ="clicar()">
+          <label for='op7'> Assiste muitos animes. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op8" onclick ="clicar()">
+          <label for='op8'>Se apaixona fácil. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op9"onclick ="clicar()">
+          <label for='op9'>Se apaixona fácil. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op10" onclick ="clicar()">
+          <label for='op10'>Demora se apegar. </label> </p>
+
+        <p>  <input type="checkbox" name="ops" id="op11" onclick ="clicar()">
+        <label for='op11'>É gostoso. </label> </p>
+      </div>
+
+      <form id="form" method="POST" action="#">
+        <a href="MODELO1.HTML">  <input type="button" name="voltar" id="cont"  value="VOLTAR"> </a>
+        <input type="submit" name="proximo" id="cont" onclick="proximo()" value="PRÓXIMO"/>
+      </form>
+
+    </section>
+
+    <footer>
+      <p id="p1">&copy; Ian and Ramon. All rights reserveds <b> BrabU's</b> ® </p>
+      <h2>Contatos: </h2>
+      <a href="#" id="email">Email: a1b2c3@gmail.com </a>
+      <a href="#" id="telefone">Telefone: 91996mole6DURA</a>
+    </footer>
+
+<script src='java2.js'>  </script>
+    
+</body>
+</html>

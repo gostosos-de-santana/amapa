@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<p>Click the button to put the new window in the current window.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+  document.body.style.background = 'black'
+
+function myFunction() {
+  var myWindow = window.open ("#");
+  
+  myWindow.document.write("<p>I replaced the current window.</p>")
+}
+</script>
+
+</body>
+</html>
