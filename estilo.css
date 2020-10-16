@@ -1,0 +1,178 @@
+body {
+    animation-name: fundo;
+    animation-duration: 300s;
+    color: rgb(0, 0, 0);
+    font: normal 15pt Arial;
+    margin: 5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+   
+}   
+
+#cabe {
+    padding-top: 30px;
+    font-size: 25pt;
+    color: black;
+}
+
+header {
+    text-align: center;
+    font-size: 20pt;
+    font-style: italic;
+    margin-bottom: -20px;
+}
+/*Todas as 3 sections*/
+section {
+    animation-name: mov;
+    animation-duration: 1s;
+    background-color: white;
+    color: rgb(58, 58, 58);
+    border-radius: 10px;
+    width: auto;
+    padding: 20px;
+    height: auto;
+    margin: 50px;
+    box-shadow: 0px 0px 1em #666;
+}
+
+/*Input que recebe o nome do usuário*/
+
+input#nome {
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    font-size: 14pt;
+    text-shadow: 0px 0px 1px black;
+    border: 3px solid;
+    border-color: green;
+    border-radius: 9px;
+    color: green;
+    outline: none;
+    transition: 0.2s;
+} 
+
+input#nome:hover {
+    border: 2.5px solid;
+    background-color: rgba(107, 106, 106, 0.151);
+    width: 250px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 0.50em green;
+}
+
+input[type=radio] {
+    animation-name: mov;
+    animation-duration: 2s;
+    width: 16px;
+    height: 15pt;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input[type=radio]:hover {
+    width: 20px;
+}
+div#brab h5{
+    text-shadow: 0px 0px 1px black;
+    color: rgba(255, 0, 0, 0.521);
+    border-bottom: 1px solid;
+}
+
+/*Estilizando todos os inputs CHECADOS*/
+
+input:checked ~ label {
+    color:green;
+    text-shadow:0px 0px 1px black ;
+    font-style: italic;
+}
+
+input:checked ~ label::before {
+    content: "♡ ";
+    font-size: 25px;
+    color: red;
+}
+
+input:checked ~ label::after {
+    content: "♡"; 
+    font-size: 25px;
+    color: red;
+}
+
+/*Estilizando os labels ao passar o mouse sobre eles*/
+
+#brab label:hover {
+    font-style: italic;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.055);
+    cursor: pointer;
+}
+
+/*Estilizando o rodapé*/
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    height: auto;  
+    color: rgb(0, 0, 0);
+}
+
+footer p#p1{
+    font-size: 25pt;
+    text-align: center;
+    font-style: italic ;
+    height: auto;
+}
+footer h2{
+    padding-left: 50px;
+}
+
+/*Estilizando os botões*/
+#brab input[type=submit]{
+  margin-inline-start: 40%;
+  margin-inline-end: 40%;
+}
+input#cont {  
+    margin-bottom:10px;    
+    padding: 10px;
+    font: normal 20px serif;
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.685);
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input#cont:hover { /*:hover serve para interação ao passar o mouse sobre o botao/link/texto/imagem*/
+    background-color: rgba(255, 255, 255, 0.575);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 0.5em rgb(0, 0, 0);
+    font-family: Arial;
+    font-style: italic;
+    border: 2px solid;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px ;
+    box-shadow: 0.3em 0.3em 0.3em rgb(0, 0, 0);
+}
+/*????*/
+.hidden {
+    display: none;
+}
+/*Page2*/
+#div2 {
+    animation-name: mov;
+    animation-duration: 1s;
+    background-color: white;
+    color: rgb(58, 58, 58);
+    border-radius: 10px;
+    
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    height: auto;
+    
+    box-shadow: 0px 0px 1em #666;
+}

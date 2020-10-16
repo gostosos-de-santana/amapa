@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gostosos Santana/AP</title>
+    <link rel="stylesheet" href='estilo.css'/>
+    <link rel="stylesheet" href="animations.css"/>
+    <style>
+
+      /*Page1*/
+      input:checked{
+        width:20px;
+      }
+      input#cont{
+        background-color:green;
+        color: white;
+      }
+      input#cont:hover{
+        border-color: green; 
+        box-shadow: 0px 0px 0.50em green;
+      }      
+
+      /*Page2*/
+
+      input[type=checkbox] {
+        animation-name: mov;
+        animation-duration: 3s;
+        width: 15px;
+        height: 15pt;
+        cursor: pointer;
+        transition: 0.2s;
+        outline: none;
+      } 
+
+      input[type=checkbox]:hover {
+        width: 20px;
+      }
+
+      /*Page3*/
+
+      .conteudo{
+        display: table;
+        
+      }
+      .fotos{
+        display: table-cell;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom:20px;
+        margin-left: 20px;
+        float: left;
+        border: 1px thin;
+        border-radius: 15px;
+        box-shadow: 0px 0px 1em #666;
+        outline: none;
+        cursor: pointer;
+      }
+      .fotos:hover{
+        opacity: 80%;
+      }
+      .txt{
+        display: table-cell;
+        float: left;
+        width: 290px;
+        margin-left: 20px;
+
+       
+      }
+      .txt h3{
+        text-align: center;
+      }
+     
+    </style>
+</head>
+
+<body>
+    <div id = "cabe">
+      <header>
+        <marquee id = "marq"> Encontre um gostoso próximo de você! (Apenas funcionando para "mulher")</marquee> 
+      </header>
+    </div>
+    
+<!--PAGINA 1-->
+
+    <section id = "brab1">
+
+      <div id='brab'>
+
+        <p id='par1'> <input type='text' placeholder="Digite o seu nome"  name='nome' id='nome' autofocus required> </p>
+                
+        <p> <b> Seu Gênero? </b> </p>
+            
+        <p> <input type='radio' name="radsex" id='femi' checked >
+            <label for='femi'> Mulher </label> </p>
+
+        <p> <input type='radio' name="radsex" id='masc' >
+            <label for='masc'> Homem </label> </p>
+
+        <p> <input type='radio' name="radsex" id='croc'>
+            <label for='croc'> Crododilo do Norte </label> </p>
+
+        <p> <input type='radio' name="radsex" id='tran'>
+            <label for='tran'> Transformer </label> </p>
+
+        <p> <input type='radio' name="radsex" id='rela'>
+            <label for='rela'> Relampago maquinhos </label> </p>
+
+        <p> <input type='radio' name="radsex" id='chi'>
+            <label for='chi'> Chico Buarque </label> </p>
+              
+        <p> <input type='radio' name="radsex" id='zap'>
+            <label for='zap'> ZAPZAP </label> </p> 
+
+        <p> <input type='radio' name="radsex" id='out'>
+            <label for='out'> Outros </label> </p>  
+
+        <input type="submit" value="CONTINUAR" id = 'cont' onclick="pagina2 ()">  
+      </div>
+    </section>
+
+<!--Page 2 começa aqui-->
+
+    <section id="div2" class="hidden">
+      <div id="brab">
+        <p id='par2' style='text-align: center; text-decoration: underline;'>  </p>
+        <p> <h3> <b> - Selecione as características do seu homem gostoso! </b> </h3> </p>
+        <p> <h5> <i> *Obrigatório a marcação de 6 características!* </i> </h5> </p>
+        <p> <input type="checkbox" name="ops" id="op1" onclick ="clicar()">
+          <label for='op1'>Gosta de ficar mais em casa.</label> </p> 
+
+        <p> <input type="checkbox" name="ops" id="op2" onclick ="clicar()">
+          <label for='op2'> Gosta de sair todo fim de semana ou quase todos.</label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op3" onclick ="clicar()">
+          <label for='op3'> Introvertido. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op4" onclick ="clicar()">
+          <label for='op4'> Extrovertido. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op5" onclick ="clicar()">
+          <label for='op5'> Gosta de Games. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op6" onclick ="clicar()">
+          <label for='op6'> Assiste muitas séries. </label> </p>
+        
+        <p> <input type="checkbox" name="ops" id="op7" onclick ="clicar()">
+          <label for='op7'> Assiste muitos animes. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op8" onclick ="clicar()">
+          <label for='op8'> Se apaixona fácil. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op10" onclick ="clicar()">
+          <label for='op10'> Demora se apegar. </label> </p>
+
+        <p> <input type="checkbox" name="ops" id="op11" onclick ="clicar()">
+        <label for='op11'> É gostoso. </label> </p>
+
+        <a href="index.html">  
+          <input type="submit" name="voltar" id="cont"  value="VOLTAR"> 
+        </a>
+      </div>
+    </section>
+
+<!--Inicio da Page3-->
+
+    <section id = "div3" class="hidden">
+      <div id= "brab" class="conteudo">
+
+        <!--Ramon-->
+        <div class="fotos">
+          <img title="RAMON" alt="Ramon"/>
+        </div>
+        <div class="txt">
+        </div>
+        <br>
+        <!--Ian-->
+        <div class="fotos">
+          <img src="#" title="IAN" alt="Ian"/> 
+        </div>
+        <div class="txt">
+        </div>
+<br>
+        <!--Andre-->
+        <div class="fotos">
+          <img title="ANDRE" alt="Andre"/> 
+        </div>
+        <div class="txt">
+        </div>
+<br>
+        <!--Marcio-->
+        <div class="fotos">
+          <img title="MARCIO" alt="Marcio"/> 
+        </div>
+        <div class="txt">
+        </div>
+<br>
+        <!--Gash-->
+        <div class="fotos">
+          <img title="Jordesom" alt="Gash"/> 
+        </div>
+        <div class="txt">
+        </div>
+<br>
+        <!--Alfeu-->
+        <div class="fotos">
+          <img title="Alfeu" alt="Alfeu"/> 
+        </div>
+        <div class="txt">
+        </div>
+<br> <input type="submit" value="Tentar Novamente" id = 'cont' onclick="pagina3 ()">  
+      </div>
+      
+    </section>
+    
+    <footer>
+      <p id="p1">&copy; Ian and Ramon. All rights reserveds <b> BrabU's</b> ® </p>
+      <h2>Contatos: </h2>
+      
+    </footer>
+
+<script src='java.js'> </script>
+    
+</body>
+
+</html>
